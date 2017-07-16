@@ -1,0 +1,5 @@
+{
+  "source": {
+    "include": ["index.js", "static/js/neighborhood.js"]
+  }
+}

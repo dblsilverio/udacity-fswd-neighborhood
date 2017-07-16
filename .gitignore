@@ -1,0 +1,9 @@
+# npm and dependencies
+npm-debug.log
+node_modules
+
+# project
+config.json
+
+# IDE
+.idea

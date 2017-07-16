@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery.mymessage.css"/>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mymessage.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                $('#show-menu').click(() => {
+                    $('#marker-section').toggle();
+                });
+            }
+        );
+    </script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="row" id="menu-section">
+            <div style="background-color: #2E5266">
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#marker-section"
+                        aria-expanded="false" id="show-menu">
+                        <span class="glyphicon glyphicon-menu-hamburger" style="font-size: 1.5em; color: #F0F2EF"
+                              aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3 col-sm-4 marker-list-view" id="marker-section">
+            <h3 class="text-center" style="color: #e0e0e0">Canela's Map</h3>
+            <h4 class="text-center" style="color: #e0e0e0">Canela, Rio Grande do Sul @ Brazil</h4>
+            <input type="text" class="form-control" style="margin: 5px;" placeholder="Filter your markers"
+                   data-bind="textInput: searchText, event: {keyup: filterMarkers}">
+            <div data-bind="foreach: listMarkers">
+                <div class="marker-item" data-bind="visible: isVisible, click:$parent.showMarker"
+                     style="cursor: pointer; margin-left: 5px;">
+                    <h4 data-bind="text: place" class="text-center" style="color: #000;"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9 col-sm-12" id="map-section">
+            <div class="row">
+                <div class="row map-view">
+                    <div id="map"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <script async defer
+                src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCy1SrAk2jg1DVSW2BpGEP5P2LQrW7n1TM">
+
+        </script>
+    </div>
+</div>
+<div id="modal" class="modal fade" role="dialog" data-bind="if: currentPlace">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" data-bind="text: currentPlace().place"></h4>
+            </div>
+            <div class="modal-body" data-bind="with: currentPlace">
+                <div class="row" style="margin: 0">
+                    <div class="col-md-8" data-bind="text: description"></div>
+                    <span data-bind="if: weather()">
+                        <div class="col-md-4 weather-box" data-bind="if: weather()">
+
+                            <div class="col-md-12 text-center"><img src="" data-bind="attr: {src: weather().icon}"></div>
+                            <div class="col-md-12 text-center" style="font-size: 2em"><span
+                                    data-bind="text: weather().temp"></span><sup>ºC</sup></div>
+                            <div class="col-md-12 text-small text-center" data-bind="text: weather().description">N/A</div>
+                            <div class="col-md-12 text-center" style="font-size: 0.6em">by <a href="https://openweathermap.org/api">OpenWeatherMap</a></div>
+                        </div>
+                    </span>
+                </div>
+                <div class="row" style="margin: 0" data-bind="if: photos().length > 0">
+                    <h5 style="font-weight: bold">Photos by <a hef="https://developer.foursquare.com/">Foursquare</a></h5>
+                    <span data-bind="foreach: photos()">
+                        <img src="" class="col-md-2 thumbs" data-bind="attr: {src: $data}">
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script async defer src="js/neighborhood.js"></script>
+
+</body>
+
+</html>

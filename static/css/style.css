@@ -1,0 +1,75 @@
+.container{
+    width: 98.9vw;
+    margin: 0;
+    padding: 0;
+}
+
+.marker-list-view{
+    height: 100vh;
+    background-color: #1F5266;
+}
+
+.map-view{
+    display: block;
+    height: 100vh;
+    background-color: #B4C5E4;
+    padding: 0;
+    margin: 0;
+}
+.marker-item{
+    border-radius: 2px;
+    background-color: #1b6d85;
+}
+
+.marker-item :hover{
+    background-color: #2b669a;
+}
+
+#map {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.weather-box {
+    border: 1px solid #E5D1D0;
+}
+
+#marker-section {
+    display: block;
+    height: 100vh;
+}
+
+#menu-section {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-device-width: 991px) {
+
+    #marker-section {
+        display: none;
+        position:absolute;
+        width: 40%;
+        z-index: 99;
+        height: calc(100vh - 40px);
+    }
+
+    #marker-section > h3 {
+        font-size: 1.5em;
+    }
+
+    #menu-section {
+        display: block;
+    }
+
+    .map-view {
+        height: calc(100vh - 40px);
+    }
+
+    .thumbs {
+        max-width: 100px;
+        padding-bottom: 5px;
+    }
+}

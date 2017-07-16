@@ -1,0 +1,50 @@
+[
+  {
+    "place": "Catedral de Pedra",
+    "description": "A Catedral Nossa Senhora de Lourdes, mais conhecida como Catedral de Pedra, é um templo católico localizado no município brasileiro de Canela, no Rio Grande do Sul. É uma grande atração turística da Serra Gaúcha.",
+    "location": {
+      "lat": -29.363,
+      "lng": -50.808
+    }
+  },
+  {
+    "place": "Santê Bistro",
+    "description": "O Santê Bistrô é uma casa mais nova, mas que já tem uma ótima aceitação. A decoração rústica à meia luz é um diferencial que proporciona conforto e acolhimento.",
+    "location": {
+      "lat": -29.363679,
+      "lng": -50.811906
+    }
+  },
+  {
+    "place": "Parque do Lago",
+    "description": "Parque construido para momentos de lazer coma afamília, tendo área para caminhada com iluminação, playground, banheiros úblicos, pista de skate e quadras poliesportivas. Situado a cinco quadras da Catedral.",
+    "location": {
+      "lat": -29.364768,
+      "lng": -50.802638
+    }
+  },
+  {
+    "place": "Alpen Park",
+    "description": "O Alpen Park está situado a três quilômetros, ou cinco minutos, da Catedral de Pedra em Canela. São 60.000 m² de área verde que proporcionam ao visitante um visual inesquecível.",
+    "location": {
+      "lat": -29.363,
+      "lng": -50.787
+    }
+  },
+  {
+    "place": "Museu dos Beatles",
+    "description": "Com mais de 1000 itens, que vão desde material discográfico (como LP’s, K-7’s, DVD’s, CD’s, Magazines), revistas, livros, instrumentos, e até mesmo figurinos, entre outros. Os visitantes terão a oportunidade de entender a importância e o legado da banda na música e no cotidiano do mundo todo.",
+    "location": {
+      "lat": -29.362305,
+      "lng": -50.829743
+    }
+  },
+  {
+    "place": "Parque Terra Mágica Florybal",
+    "description": "Idealizado pelo fundador da Florybal Chocolates, Valdir Cardoso, o Parque Terra Mágica Florybal foi construído de maneira mágica, onde cada detalhe transparece os sentimentos de uma história encantadora. Num momento inusitado, quando procurava por um local para montar uma nova loja temática, Valdir sentiu uma mistura de sensações únicas ao entrar no terreno onde hoje encontra-se o parque. O som mágico das cachoeiras que pareciam uma melodia à reflexão, um aroma agradável da mata preservada, que convidava a uma visita pelas suas trilhas quase imperceptíveis, uma suave brisa, que trouxe consigo a idéia de levar aquele momento a todas as pessoas.",
+    "location": {
+      "lat": -29.349271,
+      "lng": -50.833161
+    }
+  }
+]

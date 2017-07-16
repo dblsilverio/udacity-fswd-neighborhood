@@ -1,0 +1,11 @@
+{
+    "api":{
+        "openweather":{
+            "key": ""
+        },
+        "foursquare":{
+            "key": "",
+            "id": ""
+        }
+    }
+}
