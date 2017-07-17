@@ -109,6 +109,7 @@ function Marker(place, description, location) {
      * @type {number}
      * @memberOf Marker
      */
+    // https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript-jquery#answer-15710692
     self.placeId = () => {
         return self.place.split("").reduce(function (a, b) {
             a = ((a << 5) - a) + b.charCodeAt(0);
