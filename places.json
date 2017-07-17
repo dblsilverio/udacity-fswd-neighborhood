@@ -1,50 +1,52 @@
 [
   {
-    "place": "Catedral de Pedra",
-    "description": "A Catedral Nossa Senhora de Lourdes, mais conhecida como Catedral de Pedra, é um templo católico localizado no município brasileiro de Canela, no Rio Grande do Sul. É uma grande atração turística da Serra Gaúcha.",
+    "place": "Copacabana's Beach",
+    "description": "Copacabana beach, located at the Atlantic shore, stretches from Posto Dois (lifeguard watchtower Two) to Posto Seis (lifeguard watchtower Six). Leme is at Posto Um (lifeguard watchtower One). There are historic forts at both ends of Copacabana beach; Fort Copacabana, built in 1914, is at the south end by Posto Seis and Fort Duque de Caxias, built in 1779, at the north end. One curiosity is that the lifeguard watchtower of Posto Seis never existed. Hotels, restaurants, bars, nightclubs and residential buildings dot the promenade facing Avenida Atlântica.",
     "location": {
-      "lat": -29.363,
-      "lng": -50.808
+      "lat": -22.973907,
+      "lng": -43.185312
     }
   },
   {
-    "place": "Santê Bistro",
-    "description": "O Santê Bistrô é uma casa mais nova, mas que já tem uma ótima aceitação. A decoração rústica à meia luz é um diferencial que proporciona conforto e acolhimento.",
+    "place": "Forte de Copacabana",
+    "description": "On the southern tip of Copacabana's share of coastline is the Forte de Copacabana, a great place to learn some Brazilian history and to enjoy breakfast whilst sitting outside. As the site of both the Historical Museum of the Army and Copacabana Fort and Café 18 do Forte, the fort is a great place to start a day's activities in the neighborhood.",
     "location": {
-      "lat": -29.363679,
-      "lng": -50.811906
+      "lat": -22.986237,
+      "lng": -43.186532
     }
   },
   {
-    "place": "Parque do Lago",
-    "description": "Parque construido para momentos de lazer coma afamília, tendo área para caminhada com iluminação, playground, banheiros úblicos, pista de skate e quadras poliesportivas. Situado a cinco quadras da Catedral.",
+    "place": "Forte Duque de Caxias",
+    "description": "At the top of Morro do Leme, the traveler finds Forte do Vigia which was built in 1776. In 1935 it was renamed Forte Duque de Caxais. Today it is known as Forte do Leme. This fort helped guard the entry to Guanabara Bay on one side and Copacabana on the other side.<br>Excellent views are afforded of Copacabana Beach, Urca, Sugarloaf (Pao de Açucar), and across the Atlantic Ocean entrance of Guanabara Bay over to the Fortaleza de Santa Cruz, in Niteroi.",
     "location": {
-      "lat": -29.364768,
-      "lng": -50.802638
+      "lat": -22.963201,
+      "lng": -43.162381
     }
   },
   {
-    "place": "Alpen Park",
-    "description": "O Alpen Park está situado a três quilômetros, ou cinco minutos, da Catedral de Pedra em Canela. São 60.000 m² de área verde que proporcionam ao visitante um visual inesquecível.",
+    "place": "Arpoador",
+    "description": "The Arpoador is one of the greatest places to surf and fish in Copacabana, but also a great place to view the sea and the coastline of Copacabana. Meaning “harpoon thrower” in Portuguese, this rock outcrop creates decent waves for surfers year-round. For those looking to stay dry, the sunset here is amazing, but try to get here on a weekday night, as many people visit on the weekend.",
     "location": {
-      "lat": -29.363,
-      "lng": -50.787
+      "lat": -22.990170,
+      "lng": -43.191245
     }
   },
   {
-    "place": "Museu dos Beatles",
-    "description": "Com mais de 1000 itens, que vão desde material discográfico (como LP’s, K-7’s, DVD’s, CD’s, Magazines), revistas, livros, instrumentos, e até mesmo figurinos, entre outros. Os visitantes terão a oportunidade de entender a importância e o legado da banda na música e no cotidiano do mundo todo.",
+    "place": "Live Music at Bip Bip",
+    "description": "Many people say Bip Bip is a bar from a different time. As little more than a hole-in-the-wall on a side street in Copacabana, old-timers and locals, as well as some in-the-know tourists, flock to hear the traditional samba de roda and choro music performed live here almost every night. The owner, Alfredo, is not afraid to silence crowds if he deems them rude to the performers – you’ve been warned!",
     "location": {
-      "lat": -29.362305,
-      "lng": -50.829743
+      "lat": -22.979874,
+      "lng": -43.190498
     }
   },
   {
-    "place": "Parque Terra Mágica Florybal",
-    "description": "Idealizado pelo fundador da Florybal Chocolates, Valdir Cardoso, o Parque Terra Mágica Florybal foi construído de maneira mágica, onde cada detalhe transparece os sentimentos de uma história encantadora. Num momento inusitado, quando procurava por um local para montar uma nova loja temática, Valdir sentiu uma mistura de sensações únicas ao entrar no terreno onde hoje encontra-se o parque. O som mágico das cachoeiras que pareciam uma melodia à reflexão, um aroma agradável da mata preservada, que convidava a uma visita pelas suas trilhas quase imperceptíveis, uma suave brisa, que trouxe consigo a idéia de levar aquele momento a todas as pessoas.",
+    "place": "Adega Pérola",
+    "description": "Adega Perola is the boteco every traveler to Copacabana wishes to find. With some of the best seafood tapas in the city, this restaurant boasts the best of Rio food culture. The space is small, the beer is cold and the food is fresh. Oh, and don’t be afraid to try the octopus – it’s one of the best dishes on the menu.",
     "location": {
-      "lat": -29.349271,
-      "lng": -50.833161
+      "lat": -22.966173,
+      "lng": -43.187303
     }
   }
 ]
+
+

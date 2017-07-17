@@ -147,7 +147,7 @@ function MapViewModel() {
      */
     self.map = new google.maps.Map(document.getElementById("map"), {
         zoom: 14,
-        center: {lat: -29.363, lng: -50.808}
+        center: {lat: -22.970958, lng: -43.181649}
     });
 
     /**
@@ -233,7 +233,11 @@ function MapViewModel() {
             });
 
             photosPromise.then((photosArray) => {
-                listMarker.photos(photosArray);
+                if(photosArray.length > 0){
+                    listMarker.photos(photosArray);
+                } else {
+                    MESSAGE.add(`No photos found for '${listMarker.place}'`, 'warning');
+                }
             }).catch((error) => {
                 MESSAGE.add("Error retrieving photo data.", "error");
             });
