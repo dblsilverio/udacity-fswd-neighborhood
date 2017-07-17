@@ -61,9 +61,8 @@ app.route('/api/weather/:lat;:lon').get((req, res) => {
         let jsonResponse = '';
         rez.setEncoding('utf-8');
 
-        rez.on('data', (chunk) => { jsonResponse += chunk });
-        rez.on('end', () => { res.status(200).json(JSON.parse(jsonResponse)) })
-            .on('error', (error) => { console.error(`Error parsing JSON: ${e.message}`); res.status(500); });
+        rez.on('data', (chunk) => { jsonResponse += chunk; });
+        rez.on('end', () => { res.status(200).json(JSON.parse(jsonResponse)) }).on('error', (error) => { console.error(`Error parsing JSON: ${e.message}`); res.status(500); });
 
     });
 
