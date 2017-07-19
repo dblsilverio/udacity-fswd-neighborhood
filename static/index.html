@@ -49,11 +49,6 @@
             </div>
 
         </div>
-
-        <script async defer
-                src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCy1SrAk2jg1DVSW2BpGEP5P2LQrW7n1TM">
-
-        </script>
     </div>
 </div>
 <div id="modal" class="modal fade" role="dialog" data-bind="if: currentPlace">
@@ -99,7 +94,8 @@
 <script src="js/knockout-3.4.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/neighborhood-confs.js"></script>
-<script async defer src="js/neighborhood.js"></script>
+<script src="js/neighborhood.js"></script>
+<script async defer src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCy1SrAk2jg1DVSW2BpGEP5P2LQrW7n1TM&callback=initMap" onerror="handleMapsError()"></script> 
 
 </body>
 

@@ -153,10 +153,7 @@ function MapViewModel() {
      * @type {google.maps.Map}
      * @memberOf MapViewModel
      */
-    self.map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: {lat: -22.970958, lng: -43.181649}
-    });
+    self.map = null;
 
     /**
      * An array of google.maps.Marker.
@@ -406,7 +403,13 @@ function MapViewModel() {
         });
     };
 
-    self.fetchMarkerList();
+    /**
+     * Listens to 'ready' event and start fetching and plotting data.
+     */
+    maps_ready.subscribe(function(maps_instance){
+        self.map = maps_instance;
+        self.fetchMarkerList();
+    }, self, 'ready');
 
 }
 
