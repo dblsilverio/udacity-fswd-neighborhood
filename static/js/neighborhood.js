@@ -13,6 +13,13 @@ const MESSAGE = new MyMessage.message({
 });
 
 /**
+ * Number of marker's bounce effect.
+ * @type {number}
+ * @static
+ */
+const BOUNCES = 2;
+
+/**
  * Represents current weather temperatures in Celsius.
  *
  * @param {number} temp - Current temperature.
@@ -243,7 +250,7 @@ function MapViewModel() {
                 MESSAGE.add("Error retrieving photo data.", "error");
             });
 
-        }, 1300);
+        }, BOUNCES * 700);
     };
 
     /**
@@ -283,7 +290,7 @@ function MapViewModel() {
                     }
                 });
 
-                m.marker.setMap(visible ? self.map : null);
+                m.marker.setVisible(visible);
             });
         }
 
