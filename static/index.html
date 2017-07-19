@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/jquery.mymessage.css"/>
-    
+
 </head>
 
 <body>
@@ -18,11 +18,10 @@
 
     <div class="row">
         <div class="row" id="menu-section">
-            <div style="background-color: #2E5266">
+            <div class="hamburger-section">
                 <button class="btn btn-primary" data-toggle="collapse" data-target="#marker-section"
                         aria-expanded="false" id="show-menu">
-                        <span class="glyphicon glyphicon-menu-hamburger" style="font-size: 1.5em; color: #F0F2EF"
-                              aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-menu-hamburger" class="hamburger-button" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
@@ -31,14 +30,13 @@
     <div class="row">
 
         <div class="col-md-3 col-sm-4 marker-list-view" id="marker-section">
-            <h3 class="text-center" style="color: #e0e0e0">Copacabana</h3>
-            <h4 class="text-center" style="color: #e0e0e0">Rio de Janeiro @ Brazil</h4>
-            <input type="text" class="form-control" style="margin: 5px;" placeholder="Filter your markers"
+            <h3 class="text-center">Copacabana</h3>
+            <h4 class="text-center">Rio de Janeiro @ Brazil</h4>
+            <input type="text" class="form-control filter-input" placeholder="Filter your markers"
                    data-bind="textInput: searchText, event: {keyup: filterMarkers}">
             <div data-bind="foreach: listMarkers">
-                <div class="marker-item" data-bind="visible: isVisible, click:$parent.showMarker"
-                     style="cursor: pointer; margin-left: 5px;">
-                    <h4 data-bind="text: place" class="text-center" style="color: #000;"></h4>
+                <div class="marker-item" data-bind="visible: isVisible, click:$parent.showMarker">
+                    <h4 data-bind="text: place" class="text-center"></h4>
                 </div>
             </div>
         </div>
@@ -68,21 +66,21 @@
                 <h4 class="modal-title" data-bind="text: currentPlace().place"></h4>
             </div>
             <div class="modal-body" data-bind="with: currentPlace">
-                <div class="row" style="margin: 0">
+                <div class="row">
                     <div class="col-md-8" data-bind="text: description"></div>
                     <span data-bind="if: weather()">
                         <div class="col-md-4 weather-box" data-bind="if: weather()">
 
                             <div class="col-md-12 text-center"><img src="" data-bind="attr: {src: weather().icon}"></div>
-                            <div class="col-md-12 text-center" style="font-size: 2em"><span
-                                    data-bind="text: weather().temp"></span><sup>ºC</sup></div>
+                            <div class="col-md-12 text-center"><span
+                                    data-bind="text: weather().temp" class="temp-bigtext"></span><sup>ºC</sup></div>
                             <div class="col-md-12 text-small text-center" data-bind="text: weather().description">N/A</div>
-                            <div class="col-md-12 text-center" style="font-size: 0.6em">by <a href="https://openweathermap.org/api">OpenWeatherMap</a></div>
+                            <div class="col-md-12 text-center temp-credits">by <a href="https://openweathermap.org/api">OpenWeatherMap</a></div>
                         </div>
                     </span>
                 </div>
-                <div class="row" style="margin: 0" data-bind="if: photos().length > 0">
-                    <h5 style="font-weight: bold">Photos by <a hef="https://developer.foursquare.com/">Foursquare</a></h5>
+                <div class="row" data-bind="if: photos().length > 0">
+                    <h5 class="foursquare-credits">Photos by <a hef="https://developer.foursquare.com/">Foursquare</a></h5>
                     <span data-bind="foreach: photos()">
                         <img src="" class="col-md-2 thumbs" data-bind="attr: {src: $data}">
                     </span>
@@ -100,8 +98,8 @@
 <script src="js/jquery.mymessage.js"></script>
 <script src="js/knockout-3.4.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script async defer src="js/neighborhood.js"></script>
 <script src="js/neighborhood-confs.js"></script>
+<script async defer src="js/neighborhood.js"></script>
 
 </body>
 

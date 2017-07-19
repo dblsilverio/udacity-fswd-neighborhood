@@ -19,10 +19,49 @@
 .marker-item{
     border-radius: 2px;
     background-color: #1b6d85;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.marker-item > h4{
+    color: #000;
 }
 
 .marker-item :hover{
     background-color: #2b669a;
+}
+
+.weather-box {
+    border: 1px solid #E5D1D0;
+}
+
+.hamburger-section{
+    background-color: #2E5266;
+}
+
+.hamburger-button{
+    font-size: 1.5em;
+    color: #F0F2EF;
+}
+
+.filter-input{
+    margin: 5px;
+}
+
+.modal-body > .row{
+    margin: 0;
+}
+
+.temp-bigtext{
+    font-size: 2em;
+}
+
+.temp-credits{
+    font-size: 0.6em;
+}
+
+.foursquare-credits{
+    font-weight: bold;
 }
 
 #map {
@@ -31,13 +70,10 @@
     width: 100%;
 }
 
-.weather-box {
-    border: 1px solid #E5D1D0;
-}
-
 #marker-section {
     display: block;
     height: 100vh;
+    color: #e0e0e0;
 }
 
 #menu-section {
